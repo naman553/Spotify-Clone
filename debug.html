@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keydown Debug</title>
+</head>
+<body>
+  <script>
+    window.addEventListener("keydown", (event) => {
+      console.log("Key pressed:", event.code); // Log all key presses
+      if (event.code === "Space") {
+        event.preventDefault(); // Prevent default scrolling
+        console.log("Space key detected");
+      }
+    });
+  </script>
+</body>
+</html>
